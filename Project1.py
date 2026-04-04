@@ -5,7 +5,7 @@ import hashlib
 
 FILE_NAME = Path(__file__).with_name('loginData.txt')
 
-
+# this is a function.
 def hash_password(p: str) -> str:
     return hashlib.sha256(p.encode('utf-8')).hexdigest()
 
